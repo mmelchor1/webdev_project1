@@ -140,7 +140,7 @@ audio {
 
   ul {
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
   }
 
   img {
