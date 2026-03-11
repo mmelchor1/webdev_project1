@@ -29,7 +29,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #ff5f6d;
+  background: #4a3544;
   color: white;
 }
 
@@ -51,7 +51,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: #ff5f6d;
+  background: #4a3544;
   color: white;
 }
 
@@ -99,4 +99,34 @@ img {
 
 audio {
   margin: 1rem auto;
+}
+
+.home section:nth-child(1) {
+  border-left: 0.5rem solid #4a3544
+}
+
+
+.projects h1 {
+  color: #4a3544;
+}
+
+.projects section {
+  border-left: 0.4rem solid #4a3544;
+}
+
+.projects img {
+  max-width: 30%;
+}
+
+
+.resume h3 {
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 0.15rem solid #4a3544;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+
+.resume img {
+  max-width: 25%;
 }
