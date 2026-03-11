@@ -77,3 +77,26 @@ main {
   max-width: 70rem;
   margin: auto;
 }
+
+section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  max-width: 40%;
+}
+
+audio {
+  margin: 1rem auto;
+}
