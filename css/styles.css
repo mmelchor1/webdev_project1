@@ -105,9 +105,8 @@ audio {
   border-left: 0.5rem solid #4a3544
 }
 
-
 .projects h1 {
-  color: #4a3544;
+  color: #black;
 }
 
 .projects section {
@@ -118,7 +117,6 @@ audio {
   max-width: 30%;
 }
 
-
 .resume h3 {
   font-family: 'Poppins', sans-serif;
   border-bottom: 0.15rem solid #4a3544;
@@ -126,7 +124,27 @@ audio {
   margin-bottom: 0.8rem;
 }
 
-
 .resume img {
   max-width: 25%;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  img {
+    max-width: 70%;
+  }
+
 }
