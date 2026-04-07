@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Poppins', Arial, Helvetica, sans-serif;
   background: linear-gradient(120deg, #f6f8fc, #eef1f7);
   color: #222;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
   padding: 1rem;
-  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 0;
 }
 
 nav ul li a {
@@ -79,12 +87,14 @@ main {
 }
 
 section {
+  position: relative;
   background: white;
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08);
   transition: transform 0.25s ease;
+  overflow: hidden;
 }
 
 section:hover {
@@ -92,13 +102,15 @@ section:hover {
 }
 
 img {
-  margin: 1rem auto;
+  float: right;
+  margin: 0 0 1rem 2rem;
   border-radius: 0.8rem;
-  max-width: 40%;
+  max-width: 25%;
 }
 
 audio {
-  margin: 1rem auto;
+  display: block;
+  margin: 1rem 0;
 }
 
 .home section:nth-child(1) {
@@ -128,22 +140,35 @@ audio {
   max-width: 25%;
 }
 
+section::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #4a3544;
+  border-radius: 50%;
+  opacity: 0.3;
+}
 @media (max-width: 768px) {
 
   body {
-    padding: 1rem;
+    padding: 6rem 1rem 1rem 1rem;
   }
 
   main {
-    max-width: 90%;
+    max-width: 95%;
   }
 
-  ul {
-    flex-direction: column;
-    align-items: flex-start;
+  nav ul {
+    gap: 0.5rem;
   }
 
   img {
+    float: none;
+    display: block;
+    margin: 1rem auto;
     max-width: 70%;
   }
 
