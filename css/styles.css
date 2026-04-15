@@ -173,3 +173,20 @@ section::after {
   }
 
 }
+@media (min-width: 768px) {
+  body { background: #f0f2f5; } 
+  nav { padding: 1.5rem; } 
+  h1 { font-size: 3.2rem; } 
+  section { margin-bottom: 3rem; border: 1px solid #4a3544; } 
+  .home section:nth-child(1) { border-left-width: 1rem; } 
+}
+@media (min-width: 1024px) {
+  main { max-width: 80rem; } 
+  header { margin-top: 2rem; } 
+  h2 { letter-spacing: 1.5px; color: #4a3544; } 
+  nav ul { gap: 3rem; } 
+  section:hover { box-shadow: 0 10px 20px rgba(74, 53, 68, 0.15); } 
+}
+.resume section:first-of-type {
+  display: none;
+}
