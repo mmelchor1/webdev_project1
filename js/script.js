@@ -1,4 +1,5 @@
 function initMap() {
+    console.log("initMap is starting...");
     const lillyHQ = { lat: 39.7598, lng: -86.1578 }; 
     
     const map = new google.maps.Map(document.getElementById("map"), {
