@@ -18,6 +18,9 @@ function initMap() {
             animation: google.maps.Animation.DROP
         });
         
+        marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+        });
         console.log("Map initialized successfully.");
     } else {
         console.error("Map element not found!");
