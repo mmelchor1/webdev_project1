@@ -8,7 +8,6 @@ function initMap() {
             zoom: 15,
             center: lillyHQ,
             mapTypeId: 'roadmap',
-            mapTypeControl: true
         });
 
         const marker = new google.maps.Marker({
@@ -24,8 +23,6 @@ function initMap() {
             infoWindow.open(map, marker);
         });
         console.log("Map initialized successfully.");
-    } else {
-        console.error("Map element not found!");
     }
 }
 window.initMap = initMap;
