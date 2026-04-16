@@ -187,6 +187,3 @@ section::after {
   nav ul { gap: 3rem; } 
   section:hover { box-shadow: 0 10px 20px rgba(74, 53, 68, 0.15); } 
 }
-.resume section:first-of-type {
-  display: none;
-}
