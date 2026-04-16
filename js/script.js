@@ -17,7 +17,9 @@ function initMap() {
             title: "Eli Lilly Headquarters",
             animation: google.maps.Animation.DROP
         });
-        
+        const infoWindow = new google.maps.InfoWindow({
+            content: "<h3>Eli Lilly & Co.</h3><p>Internship Site: Enterprise app deployment.</p>"
+        });
         marker.addListener("click", () => {
             infoWindow.open(map, marker);
         });
